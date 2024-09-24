@@ -28,6 +28,20 @@ console.log(typeof a) //biginit
 
 // Keywords :
 // 3.use let,const, and var to declare variables and explain  their differences with examples.
+
+var p = 5
+var k = 7
+var l = p + k
+
+
+let user1 = 'alirzatg'
+let user2 = '_sabirtg'
+let user3= user1+ user2
+
+const r = 5
+const t = 60
+const g = r +t
+
 // backticks (template literials) :
 // 4. use backticks to create a dynamic message that includes (firstname,lastname,age,country,hobby,occupation) variables.
 
@@ -55,7 +69,45 @@ console.log(10 * 5) // * operator
 console.log(20%9) // % operator
 
 
+let a1= 3
+let a2= "3"
+let a3 = 4
 
+console.log(a1 == a2)
+console.log(a1 === a2)
+console.log(a1 != a2 )
+console.log (a1 !== a2 )
+
+console.log(a1 == a3)
+console.log(a1 === a3)
+console.log(a1 != a3 )
+console.log (a1 !== a3 )
+
+console.log(a3 == a2)
+console.log(a3 === a2)
+console.log(a3 != a2 )
+console.log (a3 !== a2 )
+
+//// //// //// ///// ////// ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let agee = 20
+let email = "alirzatg@code.edu.az"
+
+if (agee > 20 &&  agee === 20 ) {
+    console.log("Siz komandaya daxil ola bilersiz.")
+} else {
+    console.log('Siz komandaya qebol olmadiniz')
+}
+
+
+
+if (email === "alirzatg@code.edu.en"  ||  email === "alirzatg@code.edu.ru" ) {
+    console.log("Siz komandaya daxil ola bilersiz.")
+} else {
+    console.log('Siz komandaya qebol olmadiniz')
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
