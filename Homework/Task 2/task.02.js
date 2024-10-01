@@ -195,14 +195,37 @@ console.log(arr1)
 
 
 
-
-
 // ###### Task 5 ######
-
-
-
-// 1.Create a object add your name, surname, age and city.
+////////////////////////////////////////////////////////////////////////////
+// 1.Create a object add name, surname, age and address.
 // 2.Then change name to "Jhon"
+
+const targets = {
+    namee : 'Raven',
+    surnamee : 'Darkwood' ,
+    age : 40 ,
+    adreess : {
+        city : 'Los Angeles' ,
+        country : 'USA',
+        address : '1234 Elm street ,Springfield ,IL 62701 ,USA'
+    }
+
+
+
+}
+
+console.log('before' ,targets)
+targets.namee = 'Jhon'
+targets.surnamee = 'Doe'
+console.log('after' ,targets)
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
 
 const user = {
     email: "ulfat@gmail.com",
@@ -222,6 +245,22 @@ const user = {
 // 4.Console only keys of user
 // 5.Console only values of user
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////
 const mixedObject = {
     name: "ulfat",
     age: 25,
