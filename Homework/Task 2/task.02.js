@@ -239,22 +239,11 @@ const user = {
 };
 
 // 3.console each value of user object
-// const listt = Object.user
-// for (let key in listt ){
-//     console.log(listt)
-// }
 
 
 
 
 
-// // 4.Console only keys of user
-// for (let key in user ){
-    
-//     console.log(key)
-// }
-
-// 5.Console only values of user
 
 console.log(user.email)
 console.log(user.info.gender)
@@ -262,25 +251,14 @@ console.log(user.info.loc.city)
 console.log(user.info.loc.street)
 console.log(user.info.loc.education["uni name"])
 
-// for (let key in user)  {
-//     console.log(user[key])
-// }
+
+//  4.Console only keys of user
 
 
 
-
-// for (let key in user){
-//     console.log(key)
-// }
+// 5.Console only values of user
 
 
-// for (f of user){
-//     console.log(f)
-// }
-
-// for (let key in user){
-//     console.log(user[key])
-// }
 
 ////////////////////////////////////////////////////////
 
@@ -327,6 +305,18 @@ const mixedObject = {
 
 /////////////////////////////////////////////////////////////////////
 // 11.Repeat (6,7,8,9,10) tasks but now log 'values'
+
+
+
+
+
+
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////
 
 // Ulfat Zakirli's note :
