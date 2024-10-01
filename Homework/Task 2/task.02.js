@@ -4,9 +4,7 @@
 // // // // // // // // // // //
 
 // ###### Task 1 ######
-
 // 1.Multiply 12 with 8, and console the result:
-
 
 const a = 12 ;
 const b = 8  ;
@@ -17,7 +15,6 @@ console.log(c)
 ///////////////////
 
 console.log(12 * 8)
-
 
 // 2.Divide 10 by 2 add result to variables x, and console x:
 
@@ -35,14 +32,12 @@ console.log(x)
 
 */
 
-
 // 3.Create two variables called num1 and num2, assign the value 20 to num1 and value 17 to num2 then addition(+) them in console.
 
 
 const num1 = 20
 const num2 = 17
 console.log(num1 + num2)
-
 
 /*
 4.Create variables called name, surname and year assign values to them ('your name', 'your surname', ' your birth of year'),
@@ -57,7 +52,6 @@ let year = 2006
 let info = name + '  ' + surname + '  ' + year
 
 console.log(info)
-
 
 // 5.Console the remainder(%) when 17 is divided by 12.
 
@@ -77,6 +71,11 @@ cityName = ' Jalilabad'
 cityName = 'Baku '
 
 console.log(cityName)
+
+
+
+
+
 
 
 
@@ -108,6 +107,10 @@ console.log(cityName)
 
 
 
+
+
+
+
 // ###### Task 3 ######
 
 //Find the type of all the following cases
@@ -128,6 +131,10 @@ console.log('city',typeof city);
 console.log('qualification' ,typeof qualification);
 console.log('obj' ,typeof obj);
 console.log('arr' ,typeof arr);
+
+
+
+
 
 
 
@@ -175,6 +182,10 @@ arr1.shift()
 arr1.shift()
 
 console.log(arr1)
+
+
+
+
 
 
 
