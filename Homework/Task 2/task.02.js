@@ -87,17 +87,20 @@ console.log(cityName)
 // console.log('test1', test); // result 1 = test is not defined. 
 
 //{let test = "something"
-//console.log('test2', test); }
+//console.log('test2', test); } // result 2 = test2 test
 
-//console.log('test3', test);  // result 3
+//console.log('test3', test);  // result 3 = test is not defined
 
 
-//console.log('test1', test);  // ?
+//console.log('test1', test);  // test is not defined
 // {
 //     var test = "something"
-//     console.log('test2', test); // ?
+//     console.log('test2', test); // test2 test
 // }
-// console.log('test3', test); // ?
+// console.log('test3', test); // test3 test
+
+// let, const are block scope
+// var is global scope
 
 
 
@@ -218,14 +221,8 @@ console.log('before' ,targets)
 targets.namee = 'Jhon'
 targets.surnamee = 'Doe'
 console.log('after' ,targets)
+
 /////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
 
 const user = {
     email: "ulfat@gmail.com",
@@ -242,25 +239,51 @@ const user = {
 };
 
 // 3.console each value of user object
-// 4.Console only keys of user
+// const listt = Object.user
+// for (let key in listt ){
+//     console.log(listt)
+// }
+
+
+
+
+
+// // 4.Console only keys of user
+// for (let key in user ){
+    
+//     console.log(key)
+// }
+
 // 5.Console only values of user
 
+console.log(user.email)
+console.log(user.info.gender)
+console.log(user.info.loc.city)
+console.log(user.info.loc.street)
+console.log(user.info.loc.education["uni name"])
+
+// for (let key in user)  {
+//     console.log(user[key])
+// }
 
 
 
 
+// for (let key in user){
+//     console.log(key)
+// }
 
 
+// for (f of user){
+//     console.log(f)
+// }
 
-
-
-
-
-
-
-
+// for (let key in user){
+//     console.log(user[key])
+// }
 
 ////////////////////////////////////////////////////////
+
 const mixedObject = {
     name: "ulfat",
     age: 25,
@@ -277,12 +300,36 @@ const mixedObject = {
 };
 
 // 6.Log only the 'keys' whose values are of type string
+
+
+    
+
+
 // 7.Log only the 'keys' whose values are of type number
+
+
+
+
+
 // 8.Log only the 'keys' whose values are of type boolean
+
+
+
+
 // 9.Log only the 'keys' whose values are of type undefined
+
+
+
+
+
+
 // 10.Log only the 'keys' whose values are of type object
 
+/////////////////////////////////////////////////////////////////////
 // 11.Repeat (6,7,8,9,10) tasks but now log 'values'
+//////////////////////////////////////////////////////////////////////
+
+// Ulfat Zakirli's note :
 
 // let, const are block scope
 // var is global scope
