@@ -81,6 +81,8 @@ console.log(cityName)
 
 
 
+
+
 // ###### Task 2 ######
 
 // console.log('test1', test); // result 1 = test is not defined. 
@@ -97,6 +99,11 @@ console.log(cityName)
 //     console.log('test2', test); // ?
 // }
 // console.log('test3', test); // ?
+
+
+
+
+
 
 
 
@@ -121,6 +128,12 @@ console.log('city',typeof city);
 console.log('qualification' ,typeof qualification);
 console.log('obj' ,typeof obj);
 console.log('arr' ,typeof arr);
+
+
+
+
+
+
 
 
 
@@ -162,6 +175,14 @@ arr1.shift()
 arr1.shift()
 
 console.log(arr1)
+
+
+
+
+
+
+
+
 
 
 
