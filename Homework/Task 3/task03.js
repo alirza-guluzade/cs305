@@ -21,7 +21,7 @@ console.log(result0)
 
 
 
-function sumMethods() {
+function sumMethods() { 
     const result1 = arr1.reduce((acc, item) => acc+= item , 0)
     return result1
     
@@ -137,7 +137,7 @@ console.log(arr0.slice(a,b))
 
 ////////////////////////////////////////////////////////
 
- console.log('before' , arr0)
+console.log('before' , arr0)
 
 arr0[arr0.findIndex(fiqur => fiqur ==='Mehman')] = 'Fidan'
 
@@ -298,28 +298,91 @@ console.log('odd', odd1 )
 
 
 
-
 ////////////// TASK 5 - Start//////////////
-
-
 
 const arr4 = [10, "29", 10, 100, 11, 'true', false, 'undefined', true, null, 'something', false]
 
-
-
 // 1.Console all values of arr4 -
 // if value is number add it 10, if value is string add to it value + is string,if is value falsy value add to it value+ is falsly value(with return word)
-
 // Example: [10,'true',false]
 // Result: [20, "true is string", "false is falsy value"]
 
+ console.log(arr4)
+//function { 
+ const resultt = arr4.map(item => {
+     if (typeof item == 'number') {
+         return item + 10
+     }else if (typeof item == 'string') {
+        return item + 'is string'
+    }else if (typeof item == false) {
+        return 'false is value'
+
+     }else{
+        return item
+     }
+     }
+     )
+     console.log(resultt); 
+
+
+
+
+// console.log(resultt);
+
+
+
+
+
 // 2.Sum all numbers of arr4
+
+let onlyNumberss = arr4.filter(item => typeof item == 'number')
+son = 0
+for (let i = 0 ; i < onlyNumberss.length ; i ++) {
+    son += onlyNumberss[i]
+}
+console.log(son)
+
+
 // 3.Count only the values that are true
+cemlemek = 0
+for (let i = 0 ; i < arr4.length ; i++ ) {
+    if(arr4[i]){
+     cemlemek += 1
+        
+       
+    }
+}
+
+console.log('true values' , cemlemek);
+
+
 // 4.Count only the values that are string
+
+cemlemek1 = 0
+for (let i = 0 ; i < arr4.length ; i++ ) {
+    if(typeof arr4[i] == 'string'){
+     cemlemek1 += 1
+        
+       
+    }
+}
+
+console.log('string values' , cemlemek1);
+
 // 5.Count only the values that are false
 
+cemlemek2 = 0
+for (let i = 0 ; i < arr4.length ; i++ ) {
+    if(!(arr4[i])){
+     cemlemek2 += 1
+        
+       
+    }
+}
 
+console.log('false values' , cemlemek2);
 
+////////////// TASK 5 - The End//////////////
 
 
 
@@ -335,68 +398,20 @@ const arr4 = [10, "29", 10, 100, 11, 'true', false, 'undefined', true, null, 'so
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////// TASK 6 //////////////
-
+////////////// TASK 6 - Start /////////////////////
 // let fullName = 'Ulfat Zakirli Rovshen'
-
 // 1) Ad soyad ata adinizi butov sheklde goturun ve array sheklinde herflerine ayirin(split)
 // 2) FullName'də soyadinizi adinizin onune keciren alqoritm yazin
 // 3) Alinan yeni arrayi stringe cevirin(join)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
 let arr = [8, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2, 5, 6, 3, 7, 3, 7]
 
 // QEYD - Bu tasklarda "arr" arrayindan istifade edilecekdir.....
+
 //4) Yuxaridaki arrayda 5 reqeminin nece defe tekrarlandigini tapin
 
 let count = 0
@@ -419,15 +434,15 @@ console.log(sums);
 
 //6) arrayda tekrar olunan reqemleri artan sira ile duzun
 
-console.log('before',arr);
-let say = 0
-for(i of arr) {
-    for(let j =0 ; j<arr.length; j++) {
-        if (i === arr[j]) {
-            say += 1  
-        }   
-    }
-}
+// console.log('before',arr);
+// let say = 0
+// for(i of arr) {
+//     for(let j =0 ; j<arr.length; j++) {
+//         if (i === arr[j]) {
+//             say += 1  
+//         }   
+//     }
+// }
 
 // console.log('after',say)
 
