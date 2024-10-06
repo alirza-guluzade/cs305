@@ -1,0 +1,35 @@
+h1 {
+    color: rgb(17, 14, 196) ;
+    text-align: center;
+   
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+form button {
+    width: 100px;
+    height: 35px;
+    background-color: #000;
+    color: #b41616;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:disabled {
+   background-color: blue;
+    cursor: not-allowed;
+}
+
+
+    
