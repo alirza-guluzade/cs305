@@ -308,7 +308,7 @@ const arr4 = [10, "29", 10, 100, 11, 'true', false, 'undefined', true, null, 'so
 // Result: [20, "true is string", "false is falsy value"]
 
  console.log(arr4)
-//function { 
+//function (){ 
  const resultt = arr4.map(item => {
      if (typeof item == 'number') {
          return item + 10
@@ -399,10 +399,39 @@ console.log('false values' , cemlemek2);
 
 
 ////////////// TASK 6 - Start /////////////////////
-// let fullName = 'Ulfat Zakirli Rovshen'
+let fullName = 'Alirza Guluzade Tajeddin'
+
 // 1) Ad soyad ata adinizi butov sheklde goturun ve array sheklinde herflerine ayirin(split)
+
+console.log(fullName)
+
+const butov = fullName.replaceAll(' ' , '')
+const array = butov.split('')
+
+console.log(array); 
+
 // 2) FullName'də soyadinizi adinizin onune keciren alqoritm yazin
+
+const array1 = fullName.split(' ')
+
+console.log('array1' ,array1)
+
+const net = array1[0]
+const net2 = array1 [1]
+array1[0] = net2
+array1[1] = net
+console.log('array1' ,array1)
+
+
+
+
+
 // 3) Alinan yeni arrayi stringe cevirin(join)
+
+const array3 =array1.join(' ')
+console.log(typeof array3 , ' - ' ,array3)
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -424,6 +453,7 @@ console.log(count);
 
 
 //5) Yuxaridaki arraydaki butun reqemlerin cemini tapin
+
 let sums = 0
 for (let i = 0 ; i < arr.length ; i++) {
     sums += arr[i]
@@ -433,6 +463,27 @@ console.log(sums);
 
 
 //6) arrayda tekrar olunan reqemleri artan sira ile duzun
+
+// let cemm = 0
+let say = 0
+// for (let i = 0; i < arr.length ; i++) {
+//     let  = arr[i]  
+    
+// }
+
+
+console.log(arr)
+const tekrarEdedlerToplusu = arr.map(item => {
+    if (item === item) {
+        return item 
+    }
+}) 
+console.log(tekrarEdedlerToplusu)
+
+
+
+
+
 
 // console.log('before',arr);
 // let say = 0
@@ -450,12 +501,69 @@ console.log(sums);
 
 
 //7) arraydaki en boyuk reqemi tapin ve nece defe tekrarlandigini gosterin(Math.max)
+
+let maxNumber= Math.max(8, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2, 5, 6, 3, 7, 3, 7)
+console.log(maxNumber)
+let counts = 0
+for (let i = 0 ; i < arr.length ; i++) {
+    if (arr[i] == maxNumber) {
+    counts += 1
+    }
+}
+console.log(counts);
+
+
+
+
+
 //8) Adinizdaki herflerin sayini tapin ve hemin sayin arrayda olub olmamasini yoxlayin Meselen Ulfat adinda 5 herf var ve 5 arrayda var(includes)
+let firstnamee = 'Alirza'
+
+const uzunluq =firstnamee.length
+console.log('ehtimal 1' ,  ' ' , uzunluq , 'reqemi'  ,arr.includes(uzunluq))
+
+let firstnamee1 = 'Edalettin'
+
+const uzunluq1 =firstnamee1.length
+console.log('ehtimal 2' , ' ' , uzunluq1 , 'reqemi' ,arr.includes(uzunluq1))
+
 //9) arraydaki ilk 3 e bolunende qaliqda 2 alinan reqemi ve hemin reqemin arraydaki indexini tapin
+
+//arr 8, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2, 5, 6, 3, 7, 3, 7
+
+for (let i = 0 ; i < arr.length ; i++) {
+    if (arr[i]%3 === 2) {
+    console.log('element' ,'-',arr[i] , ' ' , 'element index', ' - ' ,arr.findIndex((item ) => item%3 ==2))
+    break ;
+    }
+}
+
 //10) arraydaki en boyuk reqemin ilk indexini tapin
+
+// Note ;  yuxarida maxNubmer deyisenim var .  line 505
+
+
+console.log('max nubmer first index','=',arr.findIndex((item ) => item === maxNumber))
+
 //11) 4 reqeminin arrayin hansi indexlerinde oldugunu gosterin
+
+let counnt = []
+for (let i = 0 ; i < arr.length ; i++) {
+    if (arr[i] === 4) {
+    counnt = counnt  + i + '  index of 4 / ' 
+    }
+}
+console.log(counnt);
+
+
+
+
 //12) 5 reqeminin arraydaki en boyuk ve en kicik indexlerini tapin
-//13) "arr" - arrayindan reqemleri 2 den boyuk olan yeni array yaradin ve alinmish arrayla "arr" arrayinin uzunluqlari ferqini hesablayin
+
+
+
+
+//13) "arr8" - arrayindan reqemleri 2 den boyuk olan yeni array yaradin ve alinmish arrayla "arr8" arrayinin uzunluqlari ferqini hesablayin
 //14) 7 reqeminin indexleri cemini tapin.
 
 
