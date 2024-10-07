@@ -541,13 +541,11 @@ for (let i = 0 ; i < arr.length ; i++) {
 //10) arraydaki en boyuk reqemin ilk indexini tapin
 
 // Note ;  yuxarida maxNubmer deyisenim var .  line 505
-
-
 console.log('max nubmer first index','=',arr.findIndex((item ) => item === maxNumber))
 
 //11) 4 reqeminin arrayin hansi indexlerinde oldugunu gosterin
 
-let counnt = []
+let counnt = [ ]
 for (let i = 0 ; i < arr.length ; i++) {
     if (arr[i] === 4) {
     counnt = counnt  + i + '  index of 4 / ' 
@@ -555,19 +553,50 @@ for (let i = 0 ; i < arr.length ; i++) {
 }
 console.log(counnt);
 
+//12) 5 reqeminin arraydaki en boyuk ve en kicik indexlerini tapin//
+
+// let countt = []
+// for (let i = 0 ; i < arr.length ; i++) {
+//     if (arr[i] === 5) {
+//     countt = countt  + i 
+//     }
+// }
+// const array9 = countt
+// //let minNumber = Math.min(array9)
+// let deyisen = array9.split('')
+// let minNumber = Math.min(deyisen)
+// console.log(minNumber)
+// console.log('min of 5 index' , ',' , 'max of 5 index' , );
+
+
+//13) "arr" - arrayindan reqemleri 2 den boyuk olan yeni array yaradin ve alinmish arrayla "arr" arrayinin uzunluqlari ferqini hesablayin
+let arrayy = [ ]
+for (let i = 0 ; i < arr.length ; i++) {
+    if (arr[i]> 2) {
+    arrayy += arr[i]
+    }
+}
+const newArray = arrayy.split('')
+console.log(newArray);
+
+console.log(arr.length - newArray.length)
 
 
 
-//12) 5 reqeminin arraydaki en boyuk ve en kicik indexlerini tapin
 
 
-
-
-//13) "arr8" - arrayindan reqemleri 2 den boyuk olan yeni array yaradin ve alinmish arrayla "arr8" arrayinin uzunluqlari ferqini hesablayin
 //14) 7 reqeminin indexleri cemini tapin.
 
+let couunnt = 0
+for (let i = 0 ; i < arr.length ; i++) {
+    if (arr[i] === 7) {
+    couunnt = couunnt  + i  
+    }
+}
+console.log(couunnt);
 
 
+////////////// TASK 6 - The End//////////////
 
 
 
@@ -587,60 +616,7 @@ console.log(counnt);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-///////////// TASK 7//////////////
+///////////// TASK 7 - Start//////////////
 
 let arr2 = [
     {
@@ -701,12 +677,108 @@ let arr2 = [
 //QEYD - !!! Bu tasklarda arr2 istifade edilecekdir və hər bir algorithm funksiya daxilində yazılmalıdır...
 
 // 16 arr2 de "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin
+
+// function tHerfiBaslayanlar() {
+//     const result11 = arr2.filter(item => item[0] === 't')
+//     return item
+// }
+// console.log(tHerfiBaslayanlar(result11))
+
+function tHerfiBaslayanlar () {
+    const result21= arr2.filter(item =>item.name.startsWith('t'))
+    return result21
+        
+    
+}
+
+const newArrayy = tHerfiBaslayanlar()
+console.log(newArrayy)
+
+
+
+
 // 17 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin
+function tHerfiBaslayanlarVeBitenlerName () {
+    const result22= arr2.filter(item =>item.name.startsWith('t') && item.name.endsWith('t'))
+    return result22
+        
+    
+}
+
+const saymaq = tHerfiBaslayanlarVeBitenlerName().length
+console.log(saymaq)
+
+
+
 // 18 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key"- lerinin cemini tapin
+function tHerfiBaslayanlarVeBitenlerKey () {
+    const result23= arr2.filter(item =>item.name.startsWith('t') && item.name.endsWith('t'))
+    const result24 = result23.reduce((acc,item) => acc+= item.key , 0)
+    
+    
+    return result24
+        
+    
+}
+
+
+console.log(tHerfiBaslayanlarVeBitenlerKey())
+
+
+
 // 19 arr2 de "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
+// function eHerfiIleBitenler () {
+//     const result25= arr2.filter(item => item.name.endsWith('e'))
+//     const result26 = result25.map(item => item.name = 'superdev')
+    
+    
+//     return result26
+        
+    
+// }
+
+
+// console.log(eHerfiIleBitenler())
+
+
+
+
+
+
 // 20 arr2 de "name"-i en uzun olan obyektin key-i ni tapin
+
+
+
+
+
+
 // 21 arr2 de "name"-i en uzun olan obyektin indexin kvadratini hesablayin
+
+
+
+
+
+
 // 22 arr2 de "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin.
+
+
+
+
+
+
 // 23 arr2 de en boyuk "key" - i olan obyektin "name"-i ni tapin
+
+
+
+
+
 // 24 arr2 de terkibinde 2 'L' herfi olan obyekt(ler)in index(ler)ini tapin.
+
+
+
+
+
+
 // 25 arr2 de terkibinde 2 't' herfi olan obyekt(ler)in key(ler)ini tapin.
+
+
